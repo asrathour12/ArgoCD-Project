@@ -21,10 +21,6 @@ node {
     }
 
         
-    stage('Build Number') {
-          sh 'echo "The build number is ${BUILD_NUMBER}"'
-        }
-    }
 
     stage('Push image') {
         
