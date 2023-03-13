@@ -23,8 +23,7 @@ node {
     
     
     stage('Build Number) {
-          echo "The build number is ${env.BUILD_NUMBER}"
-          sh 'echo "The build number is ${BUILD_NUMBER}"
+          sh 'echo "The build number is ${BUILD_NUMBER}"'
         }
     }
     
