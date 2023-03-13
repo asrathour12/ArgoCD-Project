@@ -20,9 +20,8 @@ node {
         }
     }
 
-    
-    
-    stage('Build Number) {
+        
+    stage('Build Number') {
           sh 'echo "The build number is ${BUILD_NUMBER}"'
         }
     }
