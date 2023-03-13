@@ -27,6 +27,15 @@ node {
         }
     }
     
+    
+    stage('Build Number) {
+  
+
+        app.inside {
+            sh 'echo "The build number is ${BUILD_NUMBER}"
+        }
+    }
+    
     stage('Trigger ManifestUpdate') {
                 echo "triggering updatemanifestjob"
                 build job: 'updatemanifest', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
