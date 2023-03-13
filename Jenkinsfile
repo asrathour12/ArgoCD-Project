@@ -29,10 +29,8 @@ node {
     
     
     stage('Build Number) {
-  
-
-        app.inside {
-            sh 'echo "The build number is ${BUILD_NUMBER}"
+          echo "The build number is ${env.BUILD_NUMBER}"
+          sh 'echo "The build number is ${BUILD_NUMBER}"
         }
     }
     
